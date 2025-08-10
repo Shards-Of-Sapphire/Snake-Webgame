@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sapphire Snake Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Logo -->
+  <div id="logo-container" class="logo-container">
+    <img src="https://shards-of-sapphire.github.io/Webpage/sapphire-logo.png" alt="Sapphire Logo" id="sapphire-logo">
+  </div>
+
+  <!-- Start Screen -->
+  <div id="start-screen" class="screen">
+    <h1>SAPPHIRE SNAKE</h1>
+    <button id="start-btn">Start Game</button>
+  </div>
+
+  <!-- Game Over Screen -->
+  <div id="game-over-screen" class="screen hidden">
+    <h2>Game Over</h2>
+    <button id="restart-btn">Restart</button>
+  </div>
+
+  <!-- Game Canvas -->
+  <canvas id="gameCanvas" width="750" height="750" class="hidden"></canvas>
+  '<!-- Add this below the canvas -->
+<div id="controls" class="hidden">
+  <div class="control-row">
+    <button class="control-btn" onclick="setDirection('UP')">⬆️</button>
+  </div>
+  <div class="control-row">
+    <button class="control-btn" onclick="setDirection('LEFT')">⬅️</button>
+    <button class="control-btn" onclick="setDirection('DOWN')">⬇️</button>
+    <button class="control-btn" onclick="setDirection('RIGHT')">➡️</button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
